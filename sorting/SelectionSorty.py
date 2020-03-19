@@ -15,5 +15,6 @@ def SelectionSort(arr):
 
 if __name__=="__main__":
     arr = [30,25,35,20,15,27,10]
-    sort_arr = SelectionSort(arr)
-    print("Sorted array of {} is {}".format(arr,sort_arr))
+    print(arr)
+    SelectionSort(arr)
+    print("Sorted array is {}".format(arr))
