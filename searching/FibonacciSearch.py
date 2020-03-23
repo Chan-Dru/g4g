@@ -5,7 +5,13 @@ def FibonacciGenerator(n):
         return 1
     return FibonacciGenerator(n-1)+FibonacciGenerator(n-2)
 
+
 def FibonacciSearch_usingGenerator(arr,key):
+    # not able to find arr of len 1
+    if(len(arr)==1 and key==arr[0]):
+        return 0
+    elif(len(arr)==1 and key!=arr[0]):
+        return -1
     m=0
     while(FibonacciGenerator(m)<len(arr)):
         m=m+1
@@ -53,8 +59,8 @@ def FibonacciSearch(arr,key):
     return -1
 
 if __name__ == "__main__":
-    arr = [0,1]
-    key = 1
+    arr = [0]
+    key = 0
     index = FibonacciSearch_usingGenerator(arr,key)
     if index >= 0 :
         print("key {} is found at index {}".format(key,index))
