@@ -18,3 +18,6 @@ MergeSort
 QuickSort
 InsertionSort
 HeapSort
+CountingSort
+RadixSort
+BucketSort
