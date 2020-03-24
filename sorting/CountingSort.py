@@ -15,7 +15,8 @@ def CountingSort(arr):
         count[i] = count[i]+count[i-1]
     # create the sort array
     output = [0]*n
-    for i in arr:
+    # inplace sorting arr[::-1]
+    for i in arr[::-1]:
         count[i-min_] = count[i-min_]-1
         output[count[i-min_]] = i
     return output
