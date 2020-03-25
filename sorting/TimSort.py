@@ -1,5 +1,5 @@
 import random
-RUN = 20
+RUN = 32
 def InsertionSort(arr,left,right):
     for i in range(left+1,right+1):
         j = i-1
@@ -14,7 +14,7 @@ def merge(arr,left,mid,right):
     n2 = right-mid
     L1 = []
     L2 = []
-    print(n1,n2,left,mid,right)
+    # print(n1,n2,left,mid,right)
     for i in range(n1):
         L1.append(arr[left+i])
     for i in range(n2):
@@ -37,6 +37,7 @@ def merge(arr,left,mid,right):
         arr[k]=L2[j]
         j+=1
         k+=1
+    # print(arr)
 
 def TimSort(arr , n):
     for i in range(0,n,RUN):
@@ -45,7 +46,7 @@ def TimSort(arr , n):
     while(size<n):
         for left in range(0,n,2*size):
             mid = min(left + size -1, n-1)
-            right = min(mid + size -1, n-1)
+            right = min(mid + size , n-1)
             merge(arr,left,mid,right)
         size = 2*size
 
