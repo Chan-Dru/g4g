@@ -19,8 +19,9 @@ QuickSort
 InsertionSort
 HeapSort
 CountingSort
-RadixSort
-BucketSort
-ShellSort
-TimSort
-CombSort
+RadixSort (CountingSort)
+BucketSort (InsetionSort)
+ShellSort (InsetionSort)
+TimSort (InsertionSort and MergeSort)
+CombSort (BubbleSort)
+PigeionholeSort (CountingSort)
