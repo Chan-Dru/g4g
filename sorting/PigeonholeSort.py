@@ -2,7 +2,7 @@ def PigeonholeSort(arr):
     n = len(arr)
     min_ = min(arr)
     max_ = max(arr)
-    range_ = (max_ , max_ - min_ + 1)[min_ < 0]
+    range_ = (max_+1, max_ - min_ + 1)[min_ < 0]
     range_ = max(n,range_)
     p_hole = [0]*range_
     for i in range(n):
@@ -17,7 +17,7 @@ def PigeonholeSort(arr):
 
 
 if __name__ == "__main__":
-    arr = [1,5,3,8,2,6,7,3,9,0]
+    arr = [1,5,3,8,2,6,7,33,9,0]
     print(arr)
     PigeonholeSort(arr)
     print("Sorted Array is {}".format(arr))

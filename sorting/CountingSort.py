@@ -5,7 +5,8 @@ def CountingSort(arr):
     if(min_>=0):
         min_=0
     max_ = max(arr)
-    t = (n,max_-min_+1)[min_<0]
+    t = (max_+1,max_-min_+1)[min_<0]
+    t = max(t,n)
     # count array
     count = [0]*t
     for i in arr:
@@ -25,7 +26,7 @@ def CountingSort(arr):
 
 if __name__ == "__main__":
     # array content is less than the length of array
-    arr = [1,4,-5,4,1,2,3] 
+    arr = [1,4,5,4,1,2,33] 
     print(arr)
     output = CountingSort(arr)
     print("Sorted array is {}".format(output))
