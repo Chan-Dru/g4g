@@ -21,3 +21,6 @@ HeapSort
 CountingSort
 RadixSort
 BucketSort
+ShellSort
+TimSort
+CombSort
