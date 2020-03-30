@@ -32,3 +32,10 @@ BitonicSort
 PancakeSort
 BinaryInsertionSort    (BinarySearch and Insertion Sort)
 BogoSort / PermutationSort
+GnomeSort
+StoogeSort
+TreeSort
+
+
+DataStructure:
+BinarySearchTree - create tree, traverse tree (inorder, preorder, postorder, levelorder), search tree, delete node
