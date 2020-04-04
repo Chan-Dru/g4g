@@ -25,3 +25,10 @@ ShellSort (InsetionSort)
 TimSort (InsertionSort and MergeSort)
 CombSort (BubbleSort)
 PigeionholeSort (CountingSort)
+CycleSort
+CocktailSort (BubbleSort)
+StrandSort (MergeSort)
+BitonicSort
+PancakeSort
+BinaryInsertionSort    (BinarySearch and Insertion Sort)
+BogoSort / PermutationSort
