@@ -1,41 +1,48 @@
 # g4g
-Geeks for Geeks
+<h1>Geeks for Geeks</h1>
 
-Contents:
+<h2>Contents:</h2>
 
-Searching:
-LinearSearch
-BinarySearch
-InterpolationSearch (Binary)
-JumpSearch - (Jump + linear)
-FibonacciSearch
-ExponentialSearch - (Jump + Binary)
+<h3>Searching:</h3>
+<ul>
+<li>LinearSearch
+<li>BinarySearch
+<li>InterpolationSearch (Binary)
+<li>JumpSearch - (Jump + linear)
+<li>FibonacciSearch
+<li>ExponentialSearch - (Jump + Binary)
+</ul>
+<h3>Sorting:</h3>
+<ul>
+<li>SelectionSort
+<li>BubbleSort
+<li>MergeSort
+<li>QuickSort
+<li>InsertionSort
+<li>HeapSort
+<li>CountingSort
+<li>RadixSort (CountingSort)
+<li>BucketSort (InsetionSort)
+<li>ShellSort (InsetionSort)
+<li>TimSort (InsertionSort and MergeSort)
+<li>CombSort (BubbleSort)
+<li>PigeionholeSort (CountingSort)
+<li>CycleSort
+<li>CocktailSort (BubbleSort)
+<li>StrandSort (MergeSort)
+<li>BitonicSort
+<li>PancakeSort
+<li>BinaryInsertionSort    (BinarySearch and Insertion Sort)
+<li>BogoSort / PermutationSort
+<li>GnomeSort
+<li>StoogeSort
+<li>TreeSort
+</ul>
 
-Sorting:
-SelectionSort
-BubbleSort
-MergeSort
-QuickSort
-InsertionSort
-HeapSort
-CountingSort
-RadixSort (CountingSort)
-BucketSort (InsetionSort)
-ShellSort (InsetionSort)
-TimSort (InsertionSort and MergeSort)
-CombSort (BubbleSort)
-PigeionholeSort (CountingSort)
-CycleSort
-CocktailSort (BubbleSort)
-StrandSort (MergeSort)
-BitonicSort
-PancakeSort
-BinaryInsertionSort    (BinarySearch and Insertion Sort)
-BogoSort / PermutationSort
-GnomeSort
-StoogeSort
-TreeSort
 
-
-DataStructure:
-BinarySearchTree - create tree, traverse tree (inorder, preorder, postorder, levelorder), search tree, delete node
+<h3>DataStructure:</h3>
+<ul>
+<li>BinarySearchTree - create tree, traverse tree (inorder, preorder, postorder, levelorder), search tree, delete node
+<li>Queue - Enqueue, Dequeue, Qfront, Qrear
+<li>Graph - Adjacency Matrix Representation, Adjacency List Representation - addVertex, addEdge, removeVertex, removeEdge, listVertex, listEdge, printGraph
+</ul>
