@@ -91,6 +91,33 @@ class Graph(AdjNodes):
     def getVertexNode(self,vertex):
         return self.vertex[self.isVertex(vertex)]
 
+    def BFS_util(self,queue,visited):
+        if len(queue):
+            # Dequeue a vertex from  
+            # queue and print it 
+            s = queue.pop(0) 
+            print(s, end = " ")
+            visited[s] = True
+            # Get all adjacent vertices of the 
+            # dequeued vertex s. If a adjacent 
+            # has not been visited, then mark it 
+            # visited and enqueue it 
+            node = self.getVertexNode(s)
+            while(node is not None):
+                # print(node.vertex,visited) 
+                if visited[node.vertex] == False: 
+                    queue.append(node.vertex) 
+                    visited[node.vertex] = True
+                    self.BFS_util(queue,visited)
+                node = node.next
+
+    def BFS_recursive(self,start):
+        queue = [start]
+        visited = dict()
+        for node in self.vertex:
+            visited[node.vertex] = False
+        self.BFS_util(queue,visited)
+
     def BFS(self,start):
         if self.isVertex(start):
             queue = [start]
@@ -126,8 +153,8 @@ class Graph(AdjNodes):
                 node = node.next
                 if node.vertex not in visited:
                     self.DFS_util(self.getVertexNode(node.vertex),visited,recursive)
-                elif recursive[node.vertex]:
-                    print("\ncycle found at ",node.vertex)
+                # elif recursive[node.vertex]:
+                #     print("\ncycle found at ",node.vertex)
             recursive[node.vertex] = False
         else:
             visited.append(node.vertex)
@@ -137,8 +164,8 @@ class Graph(AdjNodes):
                 node = node.next
                 if node.vertex not in visited:
                     self.DFS_util(self.getVertexNode(node.vertex),visited,t)
-                elif recursive != node.vertex:
-                    print("\ncycle found at ",node.vertex)
+                # elif recursive != node.vertex:
+                #     print("\ncycle found at ",node.vertex)
             
             
 
@@ -146,30 +173,17 @@ class Graph(AdjNodes):
         if self.isVertex(start):
             stack = [start]
             visited = []
-            parent = []
             while(len(stack)):
                 s_node_vertex = stack.pop()
                 start_node = self.getVertexNode(s_node_vertex)
-                print(start_node.vertex,end=" ")
-                visited.append(start_node.vertex)
-                head = start_node.vertex
+                if start_node.vertex not in visited:
+                    print(start_node.vertex,end=" ")
+                    visited.append(start_node.vertex)
                 while(start_node.next is not None):
                     start_node = start_node.next
                     if start_node.vertex not in visited:
                         stack.append(start_node.vertex)
-                    elif parent[-1] != start_node.vertex:
-                        print()
-                        print("parent",parent,"head ",head,"node ",start_node.vertex)
-                        print("Visited : ",start_node.vertex in visited)
-                        print("In Stack : ",start_node.vertex in stack)
-                        print("Cycle found at vertex ",start_node.vertex)
-                    else:
-                        print("parent skip ",parent,start_node.vertex)
-                    print()
-                    print("stack ==> ",stack)
                 
-                if head not in parent:
-                    parent.append(head)
 if __name__ == "__main__":
     g = Graph(False)
     g.addVertex(0)
@@ -201,6 +215,9 @@ if __name__ == "__main__":
     # g.getGraph()
     print("Breadth First Search of the Graph")
     g.BFS(2)
+    print("\nRecursive Breadth First Search of the Graph")
+    g.BFS_recursive(2)
     print("\nDepth First Search of the Graph")
-    # g.DFS(2)
+    g.DFS(2)
+    print("\nRecursive Depth First Search of the Graph")
     g.DFS_recursive(2)
