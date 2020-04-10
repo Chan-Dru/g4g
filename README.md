@@ -42,7 +42,7 @@
 
 <h3>DataStructure:</h3>
 <ul>
-<li>BinarySearchTree - create tree, traverse tree (inorder, preorder, postorder, levelorder), search tree, delete node
+<li>BinarySearchTree - create tree, traverse tree ((inorder, preorder, postorder) - DFS, levelorder -(BFS)), search tree, delete node
 <li>Queue - Enqueue, Dequeue, Qfront, Qrear
-<li>Graph - Adjacency Matrix Representation, Adjacency List Representation - addVertex, addEdge, removeVertex, removeEdge, listVertex, listEdge, printGraph
+<li>Graph - Adjacency Matrix Representation, Adjacency List Representation - addVertex, addEdge, removeVertex, removeEdge, listVertex, listEdge, printGraph, traverse graph(BFS, DFS) recursive or queue/stack impl
 </ul>
