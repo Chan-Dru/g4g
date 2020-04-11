@@ -46,3 +46,17 @@
 <li>Queue - Enqueue, Dequeue, Qfront, Qrear
 <li>Graph - Adjacency Matrix Representation, Adjacency List Representation - addVertex, addEdge, removeVertex, removeEdge, listVertex, listEdge, printGraph, traverse graph(BFS, DFS) recursive or queue/stack impl
 </ul>
+
+<h3>Algorithm</h3>
+<ul>
+<li>DutchNationalFlag 
+<li>Kosaraju's Algorithm - Strongly Connected Components [MotherVertex]
+<li>Floyds's Warshall Algorithm - Finding the shortest path between two vertex [TransitiveClosure]
+
+
+<h3>Problem</h3>
+<ul>
+<li>CountNodesInTreeLevel
+<li>MotherVertex in Graph
+<li>TransitiveClosure of Graph (Reachability of vertex)
+
