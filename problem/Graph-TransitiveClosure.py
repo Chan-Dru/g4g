@@ -19,20 +19,9 @@ class Graph:
         self.graph[u][v] = 1
         self.edge[u].append(v)
     
+    # Using Floyd's Warshall Algorithm
     def transitiveClosure(self):
         transitive_closure = copy.deepcopy(self.graph)
-
-        # for i in range(self.length):
-        #     for j in range(self.length):
-        #         if i==j:
-        #             continue
-        #         if transitive_closure[i][j] == 1:
-        #             k = 0
-        #             while(k<self.length):
-        #                 if transitive_closure[j][k] > 0:
-        #                     transitive_closure[i][k] = transitive_closure[i][j]
-        #                 k += 1
-
         for k in range(self.length):
             for i in range(self.length):
                 for j in range(self.length):
