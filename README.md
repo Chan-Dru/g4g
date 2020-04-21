@@ -43,8 +43,12 @@
 <h3>DataStructure:</h3>
 <ul>
 <li>BinarySearchTree - create tree, traverse tree ((inorder, preorder, postorder) - DFS, levelorder -(BFS)), search tree, delete node
-<li>Queue - Enqueue, Dequeue, Qfront, Qrear
+<li>Queue (list) - Enqueue, Dequeue, Qfront, Qrear
+<li>Queue (collections.deque) - append, popleft
+<li>Queue (queue.Queue) - maxsize, put, get, put_nowait, get_nowait, full, empty, qsize
 <li>Graph - Adjacency Matrix Representation, Adjacency List Representation - addVertex, addEdge, removeVertex, removeEdge, listVertex, listEdge, printGraph, traverse graph(BFS, DFS) recursive or queue/stack impl
+<li>heapq - heapify, heappush, heappop, heappushpop, heapreplace, nlargest, nsmallest
+<li>Heap (PriorityQueue) - (MinHeap, MaxHeap) - insertKey, deleteKey, decreaseKey or increaseKey, extractMin or extractMax, getMin or getMax
 </ul>
 
 <h3>Algorithm</h3>
@@ -52,6 +56,9 @@
 <li>DutchNationalFlag 
 <li>Kosaraju's Algorithm - Strongly Connected Components [MotherVertex]
 <li>Floyds's Warshall Algorithm - Finding the shortest path between two vertex [TransitiveClosure]
+<li>Sieve Of Eratrosthenes [Prime Numbers]
+<li>DijkstrasAlgorithm [Shortest Path AdjMatrix and AdjList using PriorityQueue]
+</ul>
 
 
 <h3>Problem</h3>
@@ -60,4 +67,9 @@
 <li>MotherVertex in Graph
 <li>TransitiveClosure of Graph (Reachability of vertex)
 <li>CountPath From A to B in Graph (Reachability number and path)
+<li>Minimum Vertex to traverse the entire matrix on given condition
+<li>Shortest Path for 4 digit Prime number with edges each other differ by single digit
+<li>Graph vertex with k cores or edges
+<li>Detect directed Graph Cycles
+</ul>
 
