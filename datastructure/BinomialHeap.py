@@ -1,10 +1,14 @@
+import sys
+
 class BinomialTree:
     def __init__(self,v):
         self.key = v
+        self.parent = None
         self.children = []
         self.order = 0
 
     def add_at_end(self,v):
+        v.parent = self
         self.children.append(v)
         self.order += 1
 
@@ -70,8 +74,65 @@ class BinomialHeap(BinomialTree):
                 smallest_node = tree
         return smallest_node.key
 
+    def printNode(self, tree):
+        print(tree.key, end=" ")
+        if tree.parent is None:
+            parent = "N"
+        else:
+            parent = tree.parent.key
+        # parent =(tree.parent.key,"N")[tree.parent is None] 
+        print("({}) ".format(parent), end=" ")
+        for child in tree.children:
+            self.printNode(child)
+
+
+    def printHeap(self):
+        print("Print Heap : ",end = "")
+        for tree in self.trees:
+            self.printNode(tree)
+        print()
+
+    def findNode(self, tree, key):
+        queue = [tree]
+        while(len(queue)):
+            tree = queue.pop(0)
+            if(tree.key==key):
+                return tree
+            for child in tree.children:
+                queue.append(child)
+
+
+    def decreaseKey(self, key, new_value):
+
+        for tree in self.trees: #sibling trees
+            tree_node = self.findNode(tree, key)
+
+            if tree_node is not None:
+                # print(tree_node, tree_node.key,tree_node.parent.key)     
+                tree_node.key = new_value
+                parent = tree_node.parent
+                while(parent is not None and tree_node.key < parent.key):
+                    parent.key, tree_node.key = tree_node.key, parent.key 
+                    tree_node = parent
+                    parent = parent.parent
+
+    def deleteKey(self, key):
+        self.decreaseKey(key,-sys.maxsize)
+        self.extractMin()
+
+            
+        
+
 
 if __name__ == "__main__":
     heap = BinomialHeap()
+    print("Insert 1 to 15 in Binomial Heap")
     [heap.insert(i) for i in range(15,0,-1)]
-    print([heap.extractMin() for i in range(15)])
+    # print([heap.extractMin() for i in range(8)])
+    heap.printHeap()
+    print("Decrease key of value 15 to 0 in Binomial Heap")
+    heap.decreaseKey(15,0)
+    heap.printHeap()
+    print("Delete key 0 in Binomial Heap")
+    heap.deleteKey(0)
+    heap.printHeap()
