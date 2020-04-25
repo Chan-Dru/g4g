@@ -7,6 +7,7 @@ class FibonacciTree():
         self.children = []
         self.parent = None
         self.order = 0
+        self.mark = False
 
     def add_at_end(self,node):
         node.parent = self
@@ -73,20 +74,32 @@ class FibonacciHeap(FibonacciTree):
             for child in tree.children:
                 queue.append(child)
 
+    def cut(self,x,y):
+        y.children.remove(x)
+        y.order -= 1
+        x.parent = None
+        self.trees.append(x)
+
+    def cascading_cut(self,y):
+        z = y.parent
+        if z is not None:
+            if y.mark == False:
+                y.mark = True
+            else:
+                self.cut(y,z)
+                self.cascading_cut(z)
+
     def decreaseKey(self,key,new_value):
         for tree in self.trees:
             node = self.find_node(tree,key)
             if node is not None:
                 parent = node.parent
                 node.key = new_value
-                while(parent is not None and node.key < parent.key):
-                    # self.printHeap()
-                    node.key,parent.key = parent.key,node.key
-                    node = parent
-                    parent = parent.parent
-
-                if node.key < self.least.key:
-                    self.least = node
+                if(parent is not None and node.key < parent.key):
+                    self.cut(node,parent)
+                    self.cascading_cut(parent)
+                    if node.key < self.least.key:
+                        self.least = node       
 
     def deleteKey(self,key):
         for tree in self.trees:
@@ -113,10 +126,13 @@ if __name__ =="__main__":
     [heap.insert(x) for x in range(15,0,-1)]
     print("Extract Min from heap => {}".format(heap.extractMin()))
     heap.printHeap()
-    print("Decrease key 15 to new value 1")
-    heap.decreaseKey(15,1)
+    print("Decrease key 13 to new value 1")
+    heap.decreaseKey(13,1)
     heap.printHeap()
     print("Extract Min from heap => {}".format(heap.extractMin()))
+    heap.printHeap()
+    print("Decrease key 14 to new value 1")
+    heap.decreaseKey(14,1)
     heap.printHeap()
     print("Delete key 2 from heap")
     heap.deleteKey(2)
