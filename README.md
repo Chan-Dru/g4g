@@ -49,6 +49,8 @@
 <li>Graph - Adjacency Matrix Representation, Adjacency List Representation - addVertex, addEdge, removeVertex, removeEdge, listVertex, listEdge, printGraph, traverse graph(BFS, DFS) recursive or queue/stack impl
 <li>heapq - heapify, heappush, heappop, heappushpop, heapreplace, nlargest, nsmallest
 <li>Heap (PriorityQueue) - (MinHeap, MaxHeap) - insertKey, deleteKey, decreaseKey or increaseKey, extractMin or extractMax, getMin or getMax
+<li>BinomialHeap - insert, merge, getMin, extractMin, deleteKey, decreaseKey
+<li>FibonacciHeap - insert, consolidate, extractMin, deleteKey, decreaseKey
 </ul>
 
 <h3>Algorithm</h3>
@@ -58,6 +60,8 @@
 <li>Floyds's Warshall Algorithm - Finding the shortest path between two vertex [TransitiveClosure]
 <li>Sieve Of Eratrosthenes [Prime Numbers]
 <li>DijkstrasAlgorithm [Shortest Path AdjMatrix and AdjList using PriorityQueue]
+<li>BellmanFortAlgorithm (Detect Negative Cycle)
+<li>TopologicalSortAlgorithm - DAG topological sort
 </ul>
 
 
@@ -71,5 +75,6 @@
 <li>Shortest Path for 4 digit Prime number with edges each other differ by single digit
 <li>Graph vertex with k cores or edges
 <li>Detect directed Graph Cycles
+<li>Print all Topological Sort in DAG
 </ul>
 
