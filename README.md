@@ -60,8 +60,9 @@
 <li>Floyds's Warshall Algorithm - Finding the shortest path between two vertex [TransitiveClosure]
 <li>Sieve Of Eratrosthenes [Prime Numbers]
 <li>DijkstrasAlgorithm [Shortest Path AdjMatrix and AdjList using PriorityQueue]
-<li>BellmanFortAlgorithm (Detect Negative Cycle)
+<li>BellmanFordAlgorithm (Detect Negative Cycle)
 <li>TopologicalSortAlgorithm - DAG topological sort
+<li>JohnsonsAlgorithm - All Shortest Path in negative weighted graph O(v2LogV + VE)
 </ul>
 
 
@@ -76,5 +77,7 @@
 <li>Graph vertex with k cores or edges
 <li>Detect directed Graph Cycles
 <li>Print all Topological Sort in DAG
+<li>Assign Direction to few undirected edges in DAG and remain DAG
+<li>Detect is there a negative cycle in Graph
 </ul>
 
