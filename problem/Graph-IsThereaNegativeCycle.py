@@ -8,14 +8,13 @@ class Graph:
 
     def addEdges(self,u,v,w):
         self.edges[u].append([v,w])
-    
-    # Bellman Ford Algorithm
-    def isThereNegtiveCycle(self):
+
+    def bellmanFord(self,sourceVertex,dist):
         maxsize = sys.maxsize
         dist = [maxsize]*self.count
 
         # Calculate shortest distance from source vertex
-        dist[0] = 0 #sourceVertex
+        dist[sourceVertex] = 0 #sourceVertex
         for _ in range(self.count-1):
             for sourceVertex in self.edges:
                 for edge in self.edges[sourceVertex]:
@@ -31,6 +30,23 @@ class Graph:
                     if dist[sourceVertex] != maxsize and dist[sourceVertex] + weight < dist[vertex]:
                         return True
 
+        return False
+    
+    # Bellman Ford Algorithm
+    def isThereNegtiveCycle(self):
+        maxsize = sys.maxsize
+        dist = [maxsize]*self.count
+        visited = [False]*self.count
+        # Calculate shortest distance from source vertex
+        for sourceVertex in range(self.count):
+            if not visited[sourceVertex]:
+                if self.bellmanFord(sourceVertex,dist):
+                    return True
+            
+            for vertex in range(self.count):
+                if dist[vertex] != maxsize:
+                    visited[vertex] = True
+        
         return False
 
 if __name__ == "__main__":
