@@ -61,8 +61,9 @@
 <li>Sieve Of Eratrosthenes [Prime Numbers]
 <li>DijkstrasAlgorithm [Shortest Path AdjMatrix and AdjList using PriorityQueue]
 <li>BellmanFordAlgorithm (Detect Negative Cycle)
-<li>TopologicalSortAlgorithm - DAG topological sort
+<li>TopologicalSortAlgorithm - DAG topological sort using DFS
 <li>JohnsonsAlgorithm - All Shortest Path in negative weighted graph O(v2LogV + VE)
+<li>KahnsAlgorithm - TopologicalSort in DAG using indegree of vertex
 </ul>
 
 
@@ -79,5 +80,6 @@
 <li>Print all Topological Sort in DAG
 <li>Assign Direction to few undirected edges in DAG and remain DAG
 <li>Detect is there a negative cycle in Graph
+<li>Maximum edges added to DAG and it remain DAG
 </ul>
 
