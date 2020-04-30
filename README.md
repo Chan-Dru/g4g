@@ -64,6 +64,7 @@
 <li>TopologicalSortAlgorithm - DAG topological sort using DFS
 <li>JohnsonsAlgorithm - All Shortest Path in negative weighted graph O(v2LogV + VE)
 <li>KahnsAlgorithm - TopologicalSort in DAG using indegree of vertex
+<li>PrimsAlgorithm - Minimum Spanning Tree of the connected graph
 </ul>
 
 
