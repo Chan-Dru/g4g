@@ -65,6 +65,8 @@
 <li>JohnsonsAlgorithm - All Shortest Path in negative weighted graph O(v2LogV + VE)
 <li>KahnsAlgorithm - TopologicalSort in DAG using indegree of vertex
 <li>PrimsAlgorithm - Minimum Spanning Tree of the connected graph
+<li>UnionFindAlgorithm - Union of disjoint Sets, find element in which disjoint set
+<li>KruskalsAlgorithm - Minimum Spanning Tree of the undirected connected weighted graph using UnionFind.
 </ul>
 
 
