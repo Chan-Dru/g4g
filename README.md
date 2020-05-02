@@ -67,6 +67,7 @@
 <li>PrimsAlgorithm - Minimum Spanning Tree of the connected graph
 <li>UnionFindAlgorithm - Union of disjoint Sets, find element in which disjoint set
 <li>KruskalsAlgorithm - Minimum Spanning Tree of the undirected connected weighted graph using UnionFind.
+<li>KMPAlgorithm - Kunth Morris Pratt (KMP) - search patter in text in O(n) using pattern preprocessing - longest proper prefix which is suffix.
 </ul>
 
 
@@ -84,5 +85,6 @@
 <li>Assign Direction to few undirected edges in DAG and remain DAG
 <li>Detect is there a negative cycle in Graph
 <li>Maximum edges added to DAG and it remain DAG
+<li>Bipartite Graph - edges formed from two disjoint sets, only even length cycle
 </ul>
 
