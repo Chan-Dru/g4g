@@ -67,7 +67,8 @@
 <li>PrimsAlgorithm - Minimum Spanning Tree of the connected graph
 <li>UnionFindAlgorithm - Union of disjoint Sets, find element in which disjoint set
 <li>KruskalsAlgorithm - Minimum Spanning Tree of the undirected connected weighted graph using UnionFind.
-<li>KMPAlgorithm - Kunth Morris Pratt (KMP) - search patter in text in O(n) using pattern preprocessing - longest proper prefix which is suffix.
+<li>KMPAlgorithm - Kunth Morris Pratt (KMP) - search pattern in text in O(n) using pattern preprocessing - longest proper prefix which is suffix.
+<li>RabinKarpAlgorithm - search pattern in text using hashing method O(n+m) to O(nm)
 </ul>
 
 
