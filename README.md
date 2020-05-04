@@ -87,5 +87,7 @@
 <li>Detect is there a negative cycle in Graph
 <li>Maximum edges added to DAG and it remain DAG
 <li>Bipartite Graph - edges formed from two disjoint sets, only even length cycle
+<li>LongestPath (maximum weight)  in DAG
+<li>Longest Path (maximum weight) in undirect acyclic graph
 </ul>
 
