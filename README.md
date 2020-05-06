@@ -90,5 +90,6 @@
 <li>LongestPath (maximum weight)  in DAG
 <li>Longest Path (maximum weight) in undirect acyclic graph
 <li>Binary Palindrome of length n with k substring repeated using dfs
+<li>Find free slots from two calendar given slot duration 
 </ul>
 

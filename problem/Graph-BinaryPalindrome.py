@@ -43,4 +43,4 @@ def binaryPalindrome(n,k):
 if __name__ == "__main__":
     binaryPalindrome(24,7)
 
-      
+# First element is always 1, of lenght k, find the last element lies in which index of k and mark it 1.
