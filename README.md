@@ -93,3 +93,7 @@
 <li>Find free slots from two calendar given slot duration 
 </ul>
 
+<h3>Dynamic Programming</h3>
+<ul>
+<li>Nth Ugly Number
+</ul>
