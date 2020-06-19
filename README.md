@@ -96,4 +96,5 @@
 <h3>Dynamic Programming</h3>
 <ul>
 <li>Nth Ugly Number
+<li>Fibonacci Number
 </ul>
