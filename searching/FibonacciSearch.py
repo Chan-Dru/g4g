@@ -7,13 +7,8 @@ def FibonacciGenerator(n):
 
 
 def FibonacciSearch_usingGenerator(arr,key):
-    # not able to find arr of len 1
-    if(len(arr)==1 and key==arr[0]):
-        return 0
-    elif(len(arr)==1 and key!=arr[0]):
-        return -1
     m=0
-    while(FibonacciGenerator(m)<len(arr)):
+    while(FibonacciGenerator(m)<=len(arr)):
         m=m+1
     offset = -1
     while(FibonacciGenerator(m)>1):
@@ -35,7 +30,7 @@ def FibonacciSearch(arr,key):
     Fib2=0
     Fib1=1
     Fib = Fib1 + Fib2
-    while(Fib<n):
+    while(Fib<=n):
         Fib2=Fib1
         Fib1=Fib
         Fib = Fib1 + Fib2
