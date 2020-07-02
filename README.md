@@ -19,8 +19,8 @@
 <li>MergeSort - O(nLogn) time
 <li>QuickSort - O(nLogn) time and more swaps - single partition and three way partition (element is fixed and position is found)
 <li>InsertionSort - O(n^2) stable, in-place and online sort (left sub array is sorted and element is inserted in the sorted array )
-<li>HeapSort
-<li>CountingSort
+<li>HeapSort - O(nLogn) time and O(1) space - inplace and not stable sort
+<li>CountingSort - O(n+k) time and O(n+k) space -stable and non comparison sort
 <li>RadixSort (CountingSort)
 <li>BucketSort (InsetionSort)
 <li>ShellSort (InsetionSort)
