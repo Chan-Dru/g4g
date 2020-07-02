@@ -14,11 +14,11 @@
 </ul>
 <h3>Sorting:</h3>
 <ul>
-<li>SelectionSort
-<li>BubbleSort
-<li>MergeSort
-<li>QuickSort
-<li>InsertionSort
+<li>SelectionSort - O(n^2) time and < O(n) swaps - select minimum element & put it in front (position fixed and element is found)
+<li>BubbleSort - O(n^2) time and < n(n+1)/2 swaps - swap adjacent elements
+<li>MergeSort - O(nLogn) time
+<li>QuickSort - O(nLogn) time and more swaps - single partition and three way partition (element is fixed and position is found)
+<li>InsertionSort - O(n^2) stable, in-place and online sort (left sub array is sorted and element is inserted in the sorted array )
 <li>HeapSort
 <li>CountingSort
 <li>RadixSort (CountingSort)
