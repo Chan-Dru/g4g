@@ -97,4 +97,5 @@
 <ul>
 <li>Nth Ugly Number
 <li>Fibonacci Number
+<li>Knapsack Problem - RecursionMethod O(2^n), TabulationMethod(BottomUp) O(n*w), MemoizationMethod(TopUp) O(n*w)
 </ul>
