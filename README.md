@@ -91,6 +91,7 @@
 <li>Longest Path (maximum weight) in undirect acyclic graph
 <li>Binary Palindrome of length n with k substring repeated using dfs
 <li>Find free slots from two calendar given slot duration 
+<li>Median of Array Stream - InsertionSort O(n^2) and Heap(nLogn)
 </ul>
 
 <h3>Dynamic Programming</h3>
@@ -98,4 +99,6 @@
 <li>Nth Ugly Number
 <li>Fibonacci Number
 <li>Knapsack Problem - RecursionMethod O(2^n), TabulationMethod(BottomUp) O(n*w), MemoizationMethod(TopUp) O(n*w)
+<li>Longest Common Subsequence
+<li>Longest Increasing Subsequence - O(nLogn) using CeilBinarySearch , o(n^2) using DP
 </ul>
