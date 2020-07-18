@@ -32,6 +32,7 @@ def knapsack2(k_capacity,n_weights,n_value,n,table):
         table[n][k_capacity] = knapsack2(k_capacity,n_weights,n_value,n-1,table)
         return table[n][k_capacity]
 
+# tabulazation
 def knapsack3(k_capacity,n_weights,n_value,n,table):
     for item in range(1,n+1):
         for wt in range(1,k_capacity+1):

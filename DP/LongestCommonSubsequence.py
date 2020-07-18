@@ -44,6 +44,7 @@ def LCS_DP(word1, word2):
     
     return out
 
+# memoization
 def lcs(word1, word2, n, m, table):
     if n ==0 or m==0:
         return 0
