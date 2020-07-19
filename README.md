@@ -102,4 +102,5 @@
 <li>Longest Common Subsequence
 <li>Longest Increasing Subsequence - O(nLogn) using CeilBinarySearch , o(n^2) using DP
 <li>Edit Distance of two strings
+<li>Minimum absolute difference of subset sum
 </ul>
