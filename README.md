@@ -107,4 +107,5 @@
 <li>Longest Path in Matrix
 <li>Subset sum 
 <li>Optimal Game Strategy
+<li>Minimum Insertion to form Palindrome
 </ul>
