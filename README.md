@@ -108,4 +108,5 @@
 <li>Subset sum 
 <li>Optimal Game Strategy
 <li>Minimum Insertion to form Palindrome
+<li>Boolean Parenthesize
 </ul>
