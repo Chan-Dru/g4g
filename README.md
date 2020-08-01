@@ -109,4 +109,5 @@
 <li>Optimal Game Strategy
 <li>Minimum Insertion to form Palindrome
 <li>Boolean Parenthesize
+<li>Shortest Common Subsequence
 </ul>
